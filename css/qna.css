@@ -1,0 +1,19 @@
+.content {
+	padding: 0px 150px;
+	margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	.content {
+		padding: 20px 20px;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	/* iframe {
+		width: 90%;
+	} */
+}

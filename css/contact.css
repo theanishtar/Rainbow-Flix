@@ -121,6 +121,7 @@ iframe {
 
 	iframe {
 		margin-top: 70px;
+		width: 110%;
 	}
 }
 
@@ -135,7 +136,7 @@ iframe {
 	}
 
 	iframe {
-		width: 397px;
+		width: 100%;
 	}
 
 	.right {

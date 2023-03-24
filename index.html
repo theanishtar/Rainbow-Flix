@@ -9,6 +9,13 @@
 	<link rel="shortcut icon" href="images/unicorn.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- bsv5 -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script> -->
+
 	<!-- icon -->
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/style.css">
@@ -18,7 +25,23 @@
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 <style>
+	/* Mobile */
+	@media (max-width: 46.1875em) {
+		.content {
+			padding: 0;
+		}
 
+		.row .item {
+			width: 170px;
+			margin: 0 5px;
+			padding: 0 0;
+		}
+
+		.item img {
+			width: 100%;
+			height: 95.24px;
+		}
+	}
 </style>
 </head>
 
@@ -53,6 +76,8 @@
 									<a class="dropdown-item" href="">Page 4</a>
 								</div>
 							</li> -->
+							<li class="nav-item"><a href="pages/list.html" class="nav-link">Phim hay</a></li>
+
 							<li class="nav-item"><a href="pages/qna.html" class="nav-link">Hỏi đáp</a></li>
 							<li class="nav-item"><a href="pages/contact.html" class="nav-link">Liên hệ</a></li>
 							<li class="nav-item"><a href="pages/about.html" class="nav-link">Về chúng tôi</a></li>
@@ -78,17 +103,58 @@
 	</div>
 
 	<div class="content">
+
+		<!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/carousel/img1.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/carousel/img2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/carousel/img3.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div> -->
+
 		<div class="hot">
 			<h1 style="z-index: -999;">ĐƯỢC XEM NHIỀU NHẤT</h1>
 			<div class="list-video">
 				<div class="row">
 					<div class="item">
-						<img src="images/thumnail/buku-no-pico.jpg" alt="">
+						<img src="images/thumnail/boku-no-pico.jpg" alt="">
 						<div class="name">
 							Boku no Piko | My Pico | ぼ く の
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -98,7 +164,15 @@
 							My Hero Accademia - Học viện anh hùng
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -108,7 +182,15 @@
 							Dr Stone - Tiến sĩ đá
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -118,7 +200,15 @@
 							Nàng dâu halloween - Conan thám tử lừng danh
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -142,7 +232,15 @@
 									Sky Tour - Sơn Tùng MTP
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -152,7 +250,15 @@
 									My Hero Accademia - Học viện anh hùng
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -162,7 +268,15 @@
 									Dr Stone - Tiến sĩ đá
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -172,7 +286,15 @@
 									Nàng dâu halloween - Conan thám tử lừng danh
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -186,7 +308,15 @@
 									Nàng dâu halloween - Conan thám tử lừng danh
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -196,7 +326,15 @@
 									Sherlock Holmes tái sinh - Conan thám tử lừng danh
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -206,7 +344,15 @@
 									Captain America Civil War full 4K
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -216,7 +362,15 @@
 									Spider-Man No Way Home - Full 4K
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 
@@ -226,7 +380,15 @@
 									Boku no Piko | My Pico | ぼ く の
 								</div>
 								<div class="views">
-									<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+									<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+								</div>
+								<div class="status">
+									<p class="like">
+										<i class='bx bxs-like'></i> 245
+									</p>
+									<p class="dislike">
+										<i class='bx bxs-dislike'></i> 23
+									</p>
 								</div>
 							</div>
 						</div>
@@ -245,7 +407,15 @@
 							Nàng dâu halloween - Conan thám tử lừng danh
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -255,7 +425,15 @@
 							Sherlock Holmes tái sinh - Conan thám tử lừng danh
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -265,7 +443,15 @@
 							Captain America Civil War full 4K
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -275,7 +461,15 @@
 							Spider-Man No Way Home - Full 4K
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 					<div class="item">
@@ -284,7 +478,15 @@
 							Demon Slayer Mugen Train
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -294,7 +496,15 @@
 							Yugioh The Dark Side Of Dimensions
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -304,7 +514,15 @@
 							Naruto Shippuden
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -314,7 +532,15 @@
 							Your Name
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 					<div class="item">
@@ -323,7 +549,15 @@
 							Mộ Đom Đóm
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -333,7 +567,15 @@
 							5cm/s - Shinkai Makoto
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -343,7 +585,15 @@
 							My Hero Accademia - Học viện anh hùng
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -353,7 +603,15 @@
 							One Punch Man - Shingo Natsume
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -363,7 +621,15 @@
 							Dr Stone - Tiến sĩ đá
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -373,7 +639,15 @@
 							Cô bé người cá Ponyo
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -383,7 +657,15 @@
 							Sky Tour - Sơn Tùng MTP
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -393,7 +675,15 @@
 							The Wolf Of Wall Street - Sói già phố Wall
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 
@@ -403,7 +693,15 @@
 							Titanic
 						</div>
 						<div class="views">
-							<p><i class='bx bx-show-alt'></i> 345.678.677 views</p>
+							<p><i class='bx bx-show-alt'></i> 345.678.677 lượt xem</p>
+						</div>
+						<div class="status">
+							<p class="like">
+								<i class='bx bxs-like'></i> 245
+							</p>
+							<p class="dislike">
+								<i class='bx bxs-dislike'></i> 23
+							</p>
 						</div>
 					</div>
 				</div>

@@ -12053,3 +12053,12 @@ h5,
 .form-control:active {
 	border-color: #000;
 }
+
+button {
+	outline: none;
+}
+
+
+button:focus {
+	outline: none;
+}

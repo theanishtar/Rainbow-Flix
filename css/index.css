@@ -77,17 +77,22 @@ body {
 	content: "l";
 }
 
-.list-video .row {
+.row {
 	margin: 0 0;
 	padding: 0 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 }
 
 .row .item {
 	width: 250px;
 	cursor: pointer;
+	margin: 0px 15px;
+	margin-bottom: 10px;
 }
+
+
+
 
 .item img {
 	width: 100%;

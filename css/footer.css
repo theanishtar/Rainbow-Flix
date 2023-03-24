@@ -35,14 +35,15 @@ footer .top ul li a:hover {
 }
 
 footer .bot i {
-	font-size: 13px;
+	font-size: 14px;
 	color: rgba(0, 255, 255, 0.415);
 }
 
 footer .bot span {
 	font-size: 14px;
-	margin-left: 5px;
+	margin-left: -2px;
 	color: rgba(0, 255, 255, 0.415);
+	letter-spacing: 1px;
 }
 
 footer .bot {
@@ -88,16 +89,7 @@ footer .bot {
 
 	}
 
-	footer .bot i {
-		font-size: 13px;
-		color: rgba(0, 255, 255, 0.415);
-	}
 
-	footer .bot span {
-		font-size: 14px;
-		margin-left: 5px;
-		color: rgba(0, 255, 255, 0.415);
-	}
 
 	footer .bot {
 		display: flex;

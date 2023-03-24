@@ -1,0 +1,11 @@
+body {
+	background-color: #1E2129;
+}
+
+.login100-form-btn {
+	--hovered-color: none;
+}
+
+.validate-input {
+	margin: 20px 0px;
+}

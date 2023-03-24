@@ -1,0 +1,46 @@
+/* form {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+form .left,
+form .right {
+	padding: 0 40px;
+}
+
+.wrap-login100 {
+	padding: 80px 0;
+}
+
+.validate-input {
+	margin: 20px 0px;
+}
+
+
+@media (max-width: 46.1875em) {
+	form {
+		display: block;
+	}
+
+	form .right .login100-form-title {
+		display: none;
+	}
+} */
+
+/* PC */
+@media (min-width: 64em) {
+	.login100-pic {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.wrap-login100 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.p-t-136 {
+	padding-top: 25px;
+}

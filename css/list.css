@@ -24,3 +24,16 @@
 		width: 100%;
 	}
 }
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+
+	.status p,
+	.views p {
+		font-size: 15px;
+	}
+
+	.item .name p {
+		font-size: 19px;
+	}
+}

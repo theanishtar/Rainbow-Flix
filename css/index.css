@@ -96,7 +96,7 @@ body {
 	height: 141px;
 }
 
-.item .name {
+.item .name p {
 	letter-spacing: 1.2px;
 	font-size: 15px;
 	margin-top: 8px;
@@ -163,4 +163,21 @@ body {
 
 .status .dislike {
 	margin-left: 20px;
+}
+
+.item .name p {
+	margin: 0 0;
+	margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	.status p {
+		font-size: 11px;
+	}
+
+	.item .name p {
+		font-size: 15px;
+	}
+
 }

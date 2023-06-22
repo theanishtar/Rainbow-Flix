@@ -1,10 +1,10 @@
 .item img {
 	width: 100%;
-	height: 197.4px;
 }
 
 .row .item {
-	width: 350px;
+	width: 300px;
+	margin: 0px 30px;
 }
 
 .row {
@@ -13,8 +13,27 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+	.content {
+		margin-left: 20px;
+	}
+
 	.item .name {
-		width: 100%;
+		width: 400px;
+	}
+
+	.item img {
+		width: 400px;
+		height: auto;
+	}
+
+	.row .item {
+		width: 500px;
+		margin-bottom: 40px;
+	}
+
+	.hot h1 {
+		margin-left: 30px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -22,6 +41,11 @@
 @media (min-width: 64em) {
 	.item .name {
 		width: 100%;
+	}
+
+	.hot h1 {
+		margin-left: 26px;
+		margin-bottom: 40px;
 	}
 }
 

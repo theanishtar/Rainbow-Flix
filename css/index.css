@@ -24,10 +24,6 @@ body {
 	color: #f1f1f1;
 }
 
-.content {
-	padding: 16px;
-}
-
 .sticky {
 	position: fixed;
 	top: 0;
@@ -85,7 +81,7 @@ body {
 }
 
 .row .item {
-	width: 250px;
+	width: 230px;
 	cursor: pointer;
 	margin: 0px 15px;
 	margin-bottom: 10px;
@@ -93,7 +89,6 @@ body {
 
 .item img {
 	width: 100%;
-	height: 141px;
 }
 
 .item .name p {
@@ -151,6 +146,7 @@ body {
 
 .views p {
 	margin-bottom: 0px;
+	color: #808080;
 }
 
 .status {
@@ -159,10 +155,12 @@ body {
 
 .status {
 	margin-bottom: 30px;
+	color: #808080;
 }
 
 .status .dislike {
 	margin-left: 20px;
+	color: #808080;
 }
 
 .item .name p {

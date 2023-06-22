@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
-	<title>Rainbow Flix - Đăng nhập</title>
+	<title>Rainbow Flix - Danh sách tài khoản</title>
 	<meta property="og:title" content="rainbow-flix">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="../images/unicorn.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/unicorn.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- icon -->
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-	<!-- <link rel="icon" type="image/png" href="../assets/login/images/icons/favicon.ico" /> -->
+	<link rel="icon" type="image/png" href="../assets/login/images/icons/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../assets/login/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/login/vendor/animate/animate.css">
@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="../css/qna.css">
 	<link rel="stylesheet" href="../css/button/btn.css">
 	<link rel="stylesheet" href="../assets/css/responsive.css">
+	<link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
@@ -35,6 +36,7 @@
 		<h1>Rainbow Flix</h1>
 		<p>Chúng tôi yêu phim, như yêu vợ bạn!</p>
 	</div>
+
 
 	<div style="z-index: 999;" class="header" id="myHeader">
 		<section class="ftco-section">
@@ -63,18 +65,18 @@
 							<li class="nav-item"><a href="list.html" class="nav-link">Phim hay</a></li>
 
 							<li class="nav-item "><a href="qna.html" class="nav-link">Hỏi đáp</a></li>
-							<li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Liên hệ</a></li>
 							<li class="nav-item"><a href="about.html" class="nav-link">Về chúng tôi</a></li>
 						</ul>
 
 						<ul class="navbar-nav">
-							<li class="nav-item active dropdown">
+							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">Đăng nhập</a>
+									aria-haspopup="true" aria-expanded="false">Tài khoản</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<!-- <a class="dropdown-item" href="">Đăng nhập</a> -->
+									<a class="dropdown-item" href="login.html">Đăng nhập</a>
 									<a class="dropdown-item" href="register.html">Đăng ký</a>
-									<a class="dropdown-item" href="forgetpassword.html">Quên mật khẩu</a>
+									<!-- <a class="dropdown-item" href="">Đăng xuất</a> -->
 								</div>
 							</li>
 						</ul>
@@ -86,62 +88,54 @@
 		</section>
 	</div>
 
+	<style>
+		.form-control {
+			background-color: #343A40 !important;
+			color: white !important;
+		}
+
+		/* PC */
+		@media (min-width : 64em) {
+			form {
+				display: flex;
+			}
+
+			.col-sm-6 {
+				padding: 0px 40px;
+			}
+		}
+	</style>
 	<div class="content">
-		<div class="limiter">
-			<div class="container-login100">
-				<div class="wrap-login100">
-					<div class="login100-pic js-tilt" data-tilt>
-						<img src="../assets/login/images/logo-3d.png" alt="IMG">
-					</div>
-
-					<form class="login100-form validate-form" id="loginForm" action="">
-						<span class="login100-form-title">
-							ĐĂNG NHẬP
-						</span>
-
-						<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-							<input class="input100" type="text" name="email" placeholder="Email">
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</span>
-						</div>
-
-						<div class="wrap-input100 validate-input" data-validate="Password is required">
-							<input class="input100" type="password" name="pass" placeholder="Mật khẩu">
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-lock" aria-hidden="true"></i>
-							</span>
-						</div>
-
-						<div class="container-login100-form-btn">
-							<button class="login100-form-btn">
-								Đăng nhập
-							</button>
-						</div>
-
-						<div class="text-center p-t-12">
-							<span class="txt1">
-								Quên
-							</span>
-							<a class="txt2" href="#">
-								mật khẩu?
-							</a>
-						</div>
-
-						<div class="text-center p-t-136">
-							<a class="txt2" href="#">
-								Tạo tài khoản trên hệ thống Rainbow Flix
-								<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-							</a>
-						</div>
-					</form>
+		<form class="col-sm-12" action="/RainbowFlix/update-account" method="post">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="email">Tên đăng nhập:</label> <input style="background-color: #343A40 !important" type="text"
+						class="form-control" placeholder="Enter email" name="username" readonly value="${account.username}">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Mật khẩu</label> <input type="text" class="form-control" placeholder="Enter password"
+						name="password" value="${account.password }">
 				</div>
 			</div>
-		</div>
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="email">Họ và tên</label> <input style="background-color: #343A40 !important" type="text"
+						class="form-control" placeholder="Enter email" name="fullname" value="${account.fullname}">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Email</label> <input type="email" class="form-control" placeholder="Email" name="email"
+						value="${account.email }">
+				</div>
+				<a style="float: right; margin-top: 20px; margin-left: 20px" type="submit" class="btn btn-primary"
+					href="<c:url value='/account?action=delete&username=${account.username}'/>">Xóa</a>
+				<button style="float: right; margin-top: 20px;" type="submit" class="btn btn-primary">Cập
+					nhật</button>
+			</div>
+		</form>
 	</div>
-	<footer style="padding-bottom: 40px;">
+
+	<footer>
 		<div class="top">
 			<ul>
 				<li><a href="">FGHHV</a></li>
@@ -161,16 +155,10 @@
 		</div>
 
 		<div class="bot">
-			<i class='bx bx-copyright'></i> <span style="margin-left: 5px; letter-spacing: 1px;">FroggyDev@FPT
-				Polytechnic</span>
+			<i class='bx bx-copyright'></i> <span>FroggyDev@FPT Polytechnic</span>
 		</div>
 
 	</footer>
-
-
-
-
-
 	<script src="../assets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="../assets/login/vendor/bootstrap/js/popper.js"></script>
 	<script src="../assets/login/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -197,48 +185,44 @@
 				header.classList.remove("sticky");
 			}
 		}
-
 	</script>
-	<script>
-		$(document).ready(function () {
-			function delay(ms) {
-				return new Promise(function (resolve) {
-					setTimeout(resolve, ms);
-				})
+
+	<script type="text/javascript">
+		function isEmail(email) {
+			var regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+			return regexp.test(String(email).toLowerCase());
+		}
+
+		function validate() {
+			var username = document.getElementById('username').value;
+			var email = document.getElementById('email').value;
+			var fullname = document.getElementById('fullname').value;
+			//console.log(document.getElementById'password');
+
+			var password = document.getElementById('abc').value;
+
+			if (username.length < 4 || username.length > 8) {
+				alert("Tên đăng nhập phải từ 4 - 8 ký tự ");
+				return;
 			}
-			$("#loginForm").submit(function (e) {
-				e.preventDefault(); // Ngăn chuyển hướng mặc định của form
+			if (isEmail(email) == false) {
+				alert("Email không hợp lệ!");
+				return;
+			}
 
-				var formData = {
-					email: $("input[name='email']").val(),
-					pass: $("input[name='pass']").val()
-				};
+			if (fullname.length < 4 || fullname.length > 25) {
+				alert("Họ và tên phải từ 4 - 25 ký tự!");
+				return;
+			}
+			if (password.length < 4 || password.length > 8) {
+				alert("Mật khẩu phải từ 4 - 8 ký tự!");
+				return;
+			}
+			alert("Đã gửi mã xác nhận đến email: " + email);
 
-				$.ajax({
-					url: 'http://localhost:3000/login',
-					method: 'POST',
-					data: formData,
-					dataType: 'json',
-					success: function (response) {
-						const { message, data } = response;
-						//Này là thông báo với data nữa cần lưu data thì lây xài
-						console.log(message, data);
-						// xuất thhong báo
-						alert(message);
-						//Cho 2s
-						delay(2000).then(res => {
-							// chuyển trang sau 2s
-							window.location.href = "../index.html";
-						});
-					},
 
-					error: function (xhr, status, error) {
-						// Xử lý lỗi
-						console.error(error);
-					}
-				});
-			});
-		});
+		}
 	</script>
 	<!-- 
 	<script src="../js/jquery.min.js"></script>

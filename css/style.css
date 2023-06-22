@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-	--blue: #007bff;
+	--blue: rgba(39, 77, 61, 0.61);
 	--indigo: #6610f2;
 	--purple: #6f42c1;
 	--pink: #e83e8c;
@@ -12061,4 +12061,8 @@ button {
 
 button:focus {
 	outline: none;
+}
+
+footer .bot i {
+	margin-right: 5px;
 }

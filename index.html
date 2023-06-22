@@ -23,23 +23,31 @@
 	<link rel="stylesheet" href="css/button/btn.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<script src="cli/jquery.min.js"></script>
+	<script src="cli/angular.min.js"></script>
+	<script src="cli/angular-route.js"></script>
+	<script src="routes/index.js"></script>
 </head>
 <style>
 	/* Mobile */
 	@media (max-width: 46.1875em) {
 		.content {
-			padding: 0;
+			padding: 0px;
 		}
 
 		.row .item {
-			width: 170px;
+			width: 230px;
 			margin: 0 5px;
 			padding: 0 0;
 		}
 
 		.item img {
 			width: 100%;
-			height: 95.24px;
+			height: auto;
+		}
+
+		.item .name {
+			width: 100%;
 		}
 	}
 </style>
@@ -140,7 +148,7 @@
 			<h1 style="z-index: -999;">Được xem nhiều nhất</h1>
 			<div class="list-video">
 				<div class="row">
-					<div class="item">
+					<a class="item" href="pages/videodetails.html">
 						<img src="images/thumnail/boku-no-pico.jpg" alt="">
 						<div class="name">
 							<p>Boku no Piko | My Pico | ぼ く の</p>
@@ -156,7 +164,7 @@
 								<i class='bx bxs-dislike'></i> 23
 							</p>
 						</div>
-					</div>
+					</a>
 
 					<div class="item">
 						<img src="images/thumnail/my-hero-academia.jpg" alt="">

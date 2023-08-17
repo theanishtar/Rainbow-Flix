@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
 // Login successfuly will return token
 router.post('/token', (req, res) => {
 	let data = req.body;
-	let sql = queryLogin(data.email, data.pass);
+	let sql = queryLogin(data.email, data.password);
 	db.query(sql, function (err, u) {
 		if (err) {
 			res.status(501).json('Server Error');

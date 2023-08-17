@@ -8,6 +8,12 @@
 - Angular, AngularJS
 - Firebase, My SQL
 
+### Djagram DB
+
+<img src="https://github.com/dangtranhuu/images/blob/main/rainbow-flix/djagram-rolesuser.png?raw=true" width="1000"> 
+
+### Login JWT Token
+<img src="https://github.com/dangtranhuu/images/blob/main/rainbow-flix/loginapi.png?raw=true" width="1000"> 
 
 ## Install and run the project
 

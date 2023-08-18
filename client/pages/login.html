@@ -96,7 +96,7 @@
 						<img src="assets/login/images/logo-3d.png" alt="IMG">
 					</div>
 
-					<form class="login100-form validate-form" id="loginForm" action="">
+					<form class="login100-form validate-form" id="loginForm">
 						<span class="login100-form-title">
 							ĐĂNG NHẬP
 						</span>
@@ -213,7 +213,7 @@
 
 				var formData = {
 					email: $("input[name='email']").val(),
-					pass: $("input[name='pass']").val()
+					password: $("input[name='password']").val()
 				};
 
 				$.ajax({
@@ -222,13 +222,14 @@
 					data: formData,
 					dataType: 'json',
 					success: function (response) {
-						const { message, data } = response;
+						console.log(response)
 						//Này là thông báo với data nữa cần lưu data thì lây xài
-						console.log(message, data);
 						// xuất thhong báo
-						let lastname = data[0].fullname;
-						alert(message);
+						let lastname = response.fullname;
+						alert('Chào ' + lastname);
 						saveCookie('fullname', lastname.substring(lastname.lastIndexOf(" ")));
+						localStorage.setItem('token', response.token);
+						localStorage.setItem('refreshToken', response.refreshToken);
 						//Cho 2s
 						delay(2000).then(res => {
 							// chuyển trang sau 2s

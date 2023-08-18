@@ -15,7 +15,7 @@ app.controller("videoDetailsCtrl", function ($rootScope, $scope, $routeParams, $
 	}).then(function successCallback(response) {
 		// this callback will be called asynchronously
 		// when the response is available
-		$scope.videoDetails = response.data.data;
+		$scope.videoDetails = response.data;
 		//console.log(response.data)
 		load($scope.videoDetails.href);
 	}, function errorCallback(response) {

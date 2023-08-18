@@ -228,7 +228,7 @@
 									{{video.likes}}</a>
 							</div>
 							<div ng-hide="{{flagLike}}">
-								<a onclick="change(this)" href="localhost:3000/video/like/{{videoDetails.id}}" class="one"><i
+								<a onclick="change(this)" id="videoDetails-{{videoDetails.id}}" class="one"><i
 										style="color: #808080;" class='bx bxs-like'></i> {{videoDetails.likes}}</a>
 							</div>
 							<!-- <c:if test="${flagLike == true}">
@@ -396,6 +396,19 @@
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
 		function change(e) {
+			let id = (e.id).substring(13)
+			alert('like' + id);
+			$.ajax({
+				url: 'http://localhost:3000/video/like/id=' + id,
+				method: 'PUT',
+				success: function (response) {
+					// like thành công
+				},
+				error: function (xhr, status, error) {
+					// Xử lý lỗi
+					console.error(error);
+				}
+			});
 			//alert(e.querySelector('.bx').style.color);
 			console.log(e.querySelector('.bx'))
 			if (e.querySelector('.bx').style.color == 'red') {
